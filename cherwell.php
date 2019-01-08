@@ -15,7 +15,7 @@
 
 		//establishes a new database connection
 		$conn = new Connection('slackdb');
-		$slackToken = $conn->tokenGrab(5);
+		$slackToken = $conn->tokenGrab(x);
 
 		// The program needs to instantiate to check if the slack token is authentic
 		if($slack == $slackToken){
@@ -35,7 +35,7 @@
 				}
 				//else just grab the existing token and return a ticket
 				else{
-					$token = $conn->tokenGrab(1);
+					$token = $conn->tokenGrab(x);
 				}
 				echo $slacker->getTicket($token);
 			}
