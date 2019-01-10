@@ -14,7 +14,7 @@
 		$input = $rawInfo[1];
 
 		//establishes a new database connection
-		$conn = new Connection('slackdb');
+		$conn = new Connection('DB-NAME');
 		$slackToken = $conn->tokenGrab(x);
 
 		// The program needs to instantiate to check if the slack token is authentic
